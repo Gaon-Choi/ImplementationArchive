@@ -2,7 +2,7 @@ def lower_bound(arr: list, target):
     left = 0
     right = len(arr) - 1
     
-    min_idx = right
+    min_idx = len(arr)  # 최소이므로 답이 될 수 있는 값보다 크게 설정
     
     while left <= right:
         mid = (left + right) // 2

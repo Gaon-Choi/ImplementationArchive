@@ -1,10 +1,10 @@
 '''
-중복 조합(Product)
+중복 순열(Permutation with Repetition; Product)
 
 순서 0, 중복 0
 '''
 
-def Product(arr, n):
+def permutation_with_repetition(arr, n):
     result = []
     product = []
 

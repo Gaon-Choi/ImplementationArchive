@@ -1,4 +1,10 @@
-def Combination(arr, n):
+'''
+조합(Combination)
+
+순서 X, 중복 X
+'''
+
+def combination(arr, n):
     result = []
     combination = []
 

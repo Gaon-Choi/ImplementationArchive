@@ -1,12 +1,14 @@
+from collections import deque
+
 def BFS(graph, v):
     result = []
     visited = [False] * len(graph)
 
     visited[v] = True
-    queue = [v]
+    queue = deque([v])
 	
     while queue:
-        vertex = queue.pop(0)
+        vertex = queue.popleft()
         result.append(vertex)
 
         for curr_v in sorted(graph[vertex]):
